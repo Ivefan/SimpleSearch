@@ -28,7 +28,7 @@ public class TFIDFCalculatior {
                     wordCount++;
                 }
             }
-            double idf = 1 + Math.log(size / wordCount);
+            double idf = Math.log(size / wordCount);
             IDFMap.put(word, idf);
         }
         return IDFMap;
